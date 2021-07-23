@@ -1,0 +1,6 @@
+<footer>
+    <small>Copyright {{ now.Format "2006" }} {{ .Site.Params.author }}.</small>
+    {{ range .Site.Data.socialmedia.accounts }}
+     <div><a href="{{ .url }}" id="social-media">{{ .name }}</a></div>
+    {{ end }}
+</footer>
